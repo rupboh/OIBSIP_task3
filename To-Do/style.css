@@ -1,0 +1,143 @@
+/* CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 1, 40);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 30px;
+}
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, 
+form button {
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    border: none;
+    background: white;
+    border-radius: 28px;
+}
+
+form button {
+    color: rgb(204, 167, 0);
+    cursor: pointer;
+    margin-left: 9px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo {
+    margin: 30px;
+    padding-left: 30px;
+    background: white;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.todo-item input[type="checkbox"] {
+    appearance: none;
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    border: 12px solid #ccc;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+.todo-item input[type="checkbox"]:checked {
+    background-color: #61bd4f;
+    border-color: #61bd4f;
+}
+
+.todo-item.completed {
+    opacity: 0.5;
+}
+
+.todo-item .timestamp {
+    font-size: 25px;
+    color: #e7dede;
+}
+
+.todo-item button {
+    margin-left: 10px;
+}
+
+span {
+    font-size: 25px;
+    color: #ccc;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Add more CSS styles as needed */
+.delete-btn, 
+ .edit-btn{
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.delete-btn {
+    background: rgb(235, 70, 70);
+}
+
+.edit-btn{
+    background-color: rgb(204, 167, 33);
+}
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+select {
+    color:rgb(204, 167, 0);
+    width: 109px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 34px;
+    margin: 20px;
+    font-size: 15px;
+}
